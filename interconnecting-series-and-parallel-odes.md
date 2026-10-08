@@ -194,9 +194,10 @@ comes from connecting their terminal derivatives.
 Working with ODE blocks also makes higher-order extensions easier to
 assemble where suitable. Construct coefficients using
 [*ODE Coefficient Synthesis*][synthesis], Sections 1--4, and insert them
-into a block's local equation. The series/parallel connection rules remain
-unchanged, avoiding repeated branch-by-branch current and voltage
-derivations. For phasors, substitute $D=\mathrm i\omega$ in the extended
+into a block's local equation. Once the local block equations are known,
+assemble and extend the system using the series/parallel ODE connection
+rules instead of repeating mesh analysis for the full network.
+For phasors, substitute $D=\mathrm i\omega$ in the extended
 polynomial. Any increase in differential order requires the corresponding
 initial data, consistent with the connection constraints.
 

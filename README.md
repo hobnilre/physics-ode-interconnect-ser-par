@@ -10,8 +10,8 @@ assembled as four first-order equations, solved in phasor form, and reduced
 to an equivalent scalar ODE with matching initial data.
 
 Where higher-order local equations are suitable, coefficient synthesis
-extends the blocks while the same connection rules are reused, avoiding
-repeated branch-by-branch current and voltage derivations.
+extends the blocks while reusing the same series/parallel rules instead of
+repeating mesh analysis for the full network.
 
 It covers only this reasoning and mathematics, within five pages.
 

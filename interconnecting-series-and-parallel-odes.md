@@ -29,8 +29,14 @@ common current; orient parallel branch currents in the same direction
 between the common terminals. All $L,R,C$ parameters below are positive
 constants.
 
-Use the LRC and CRL forms derived in
-[*The ODE Template and Its Domain Equivalents*][template], Section 2.
+The interconnection algebra applies in any domain with corresponding ODEs
+and connection balances. Map the variables, coefficients and units using
+[*The ODE Template and Its Domain Equivalents*][template], Sections 2--3;
+higher-order extensions and phasor substitution then follow the same algebra.
+Follow the mapped common and summed quantities: electrical series corresponds
+to mechanical parallel, and vice versa, under the template's force--voltage
+correspondence.
+
 For a series LRC block $\mathcal S$, charge $q$ gives
 \begin{equation}
 e_s=L_sD^2q+R_sDq+\frac{q}{C_s},\qquad i_s=Dq.
@@ -104,9 +110,10 @@ part of the assembled system.
 Use the template's convention
 $x(t)=\operatorname{Re}(\widehat x e^{\mathrm i\omega t})$, $\omega>0$,
 so $D\mapsto\mathrm i\omega$. The two local equations give
+\nopagebreak[4]
 \begin{align}
 Z_s(\omega)&=\mathrm i\omega L_s+R_s+\frac1{\mathrm i\omega C_s},
-&\widehat e_s&=Z_s\widehat i, \nonumber\\
+&\widehat e_s&=Z_s\widehat i, \nonumber\\*
 Y_p(\omega)&=\mathrm i\omega C_p+\frac1{R_p}
 +\frac1{\mathrm i\omega L_p},
 &\widehat i&=Y_p\widehat e_p.
@@ -181,9 +188,9 @@ $D$ to commute, giving
 The fourth-order polynomial is
 \begin{align}
 K(s)={}&L_sC_ps^4+
-\left(\frac{L_s}{R_p}+R_sC_p\right)s^3 \nonumber\\
+\left(\frac{L_s}{R_p}+R_sC_p\right)s^3 \nonumber\\*
 &+\left(\frac{L_s}{L_p}+\frac{R_s}{R_p}
-+\frac{C_p}{C_s}+1\right)s^2 \nonumber\\
++\frac{C_p}{C_s}+1\right)s^2 \nonumber\\*
 &+\left(\frac{R_s}{L_p}+\frac1{C_sR_p}\right)s
 +\frac1{C_sL_p}.
 \label{eq:expanded}

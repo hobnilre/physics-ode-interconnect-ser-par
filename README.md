@@ -9,6 +9,10 @@ variables and contribute to signed sums. A symbolic mixed connection is
 assembled as four first-order equations, solved in phasor form, and reduced
 to an equivalent scalar ODE with matching initial data.
 
+The same algebra applies in any domain with corresponding ODEs and connection
+balances, using the variable, coefficient and unit mappings in
+[the ODE template](https://github.com/hobnilre/physics-ode-template).
+
 Where higher-order local equations are suitable, coefficient synthesis
 extends the blocks while reusing the same series/parallel rules instead of
 repeating mesh analysis for the full network.

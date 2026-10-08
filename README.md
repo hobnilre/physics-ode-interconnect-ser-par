@@ -23,3 +23,10 @@ The title date stays fixed; the PDF creation timestamp advances on rebuild.
 Use `make -B pdf` to force a rebuild. Intermediates go to ignored `build/`,
 or to the path set by `BUILD_DIR`. `make clean` removes that directory and
 keeps the article PDF and figure assets.
+
+<!-- article-tools:translations:start -->
+## Translations
+
+- Svenska: [PDF](sv/interconnecting-series-and-parallel-odes-sv.pdf) · [Markdown](sv/interconnecting-series-and-parallel-odes-sv.md)
+
+<!-- article-tools:translations:end -->

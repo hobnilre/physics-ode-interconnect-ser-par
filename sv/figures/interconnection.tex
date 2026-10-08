@@ -1,0 +1,16 @@
+\documentclass[border=4pt]{standalone}
+\input{../../figures/figure-style}
+\begin{document}
+\begin{tikzpicture}[>=Latex,thick,
+  block/.style={draw,rounded corners=2pt,minimum width=2.1cm,minimum height=1.05cm,align=center}]
+  \node[draw,circle,minimum size=0.55cm,inner sep=0pt] (sum) at (0,0) {$+$};
+  \node[block,draw=elemA] (series) at (2.6,0) {$\mathcal S$\\serieblock};
+  \node[block,draw=elemB] (parallel) at (6.2,0) {$\mathcal P$\\parallellblock};
+  \draw[->] (-1.5,0) -- node[above] {$e$} (sum);
+  \draw[->] (sum) -- node[above] {$e_s$} (series);
+  \draw[->] (series) -- node[above] {$i=Dq$} (parallel);
+  \draw[->] (parallel) -- (9,0) node[right] {$e_p=D\lambda$};
+  \fill (8,0) circle (1.5pt);
+  \draw[->] (8,0) -- (8,-1.25) -- (0,-1.25) -- node[left,pos=0.83] {$-$} (sum);
+\end{tikzpicture}
+\end{document}

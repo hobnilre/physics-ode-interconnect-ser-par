@@ -9,6 +9,10 @@ variables and contribute to signed sums. A symbolic mixed connection is
 assembled as four first-order equations, solved in phasor form, and reduced
 to an equivalent scalar ODE with matching initial data.
 
+Where higher-order local equations are suitable, coefficient synthesis
+extends the blocks while the same connection rules are reused, avoiding
+repeated branch-by-branch current and voltage derivations.
+
 It covers only this reasoning and mathematics, within five pages.
 
 ## Four related articles

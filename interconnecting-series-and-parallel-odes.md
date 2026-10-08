@@ -189,11 +189,18 @@ K(s)={}&L_sC_ps^4+
 \label{eq:expanded}
 \end{align}
 Its product term comes from the two local ODEs; the additional $s^2$
-comes from connecting their terminal derivatives. For the dimensional
-classification of higher-order coefficients, see
-[*ODE Coefficient Synthesis*][synthesis], Section 1.
+comes from connecting their terminal derivatives.
 
-The eliminated variables are reconstructed by
+Working with ODE blocks also makes higher-order extensions easier to
+assemble where suitable. Construct coefficients using
+[*ODE Coefficient Synthesis*][synthesis], Sections 1--4, and insert them
+into a block's local equation. The series/parallel connection rules remain
+unchanged, avoiding repeated branch-by-branch current and voltage
+derivations. For phasors, substitute $D=\mathrm i\omega$ in the extended
+polynomial. Any increase in differential order requires the corresponding
+initial data, consistent with the connection constraints.
+
+For the mixed connection above, the eliminated variables are reconstructed by
 \begin{equation}
 i=Dq,\qquad e_p=e-A(D)q,\qquad
 \lambda=L_p\left(i-C_pD e_p-\frac{e_p}{R_p}\right).
